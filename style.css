@@ -178,3 +178,7 @@ body:has(#accessoiresFilter:checked) .Hoofddeksel, body:has(#accessoiresFilter:c
 #resultaatOverzicht:has(ul:empty), #resultaatOverzicht:has(ul:empty) ~ #saveOutfit {
     display: none;
 }
+
+li {
+    list-style-type: none;
+}
