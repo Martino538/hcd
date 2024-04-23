@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HCD - Prototype Kledingkast</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Kledingkeuze</h1>
+            <form action="/resultaten.html" method="get">
+                <div class="form-group">
+                    <label for="noPrefColor">Welke kleur wil je dragen?</label>
+                    <select id="noPrefColor" name="noPrefColor"></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="noPrefType">Welk type kledingstuk wil je dragen?</label>
+                    <select id="noPrefType" name="noPrefType"></select>
+                </div>
+
+                <input type="submit" value="Verstuur">
+            </form>
+        </div>
+        <a href="index.html" class="back-btn">Terug naar menu</a>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

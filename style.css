@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --font-family: "Roboto", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1200px;
+    height: 100vh;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+
+/* --- INDEX PAGINA --- */
+
+.link-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.product-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+.product {
+    width: 250px;
+    height: 250px;
+
+    button {
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        
+        label {
+            text-align: start;
+        }
+
+        input{
+            width: 97%;
+        }
+    }
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.savedOutfitItem {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* --- Overzicht pagina --- */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    #compile-container, .container {
+        padding: 0 100px;
+        text-align: center;
+    }
+    h1 {
+        margin: 0;
+    }
+    .card {
+        flex: 1 0 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* --- Resultaten Container --- */
+
+#results-container, #compile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+#resultaatOverzicht ul {
+    border: 1px solid black;
+    padding: 10px;
+}

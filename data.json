@@ -1,0 +1,32 @@
+{
+    "kleding": [
+        {"id": "1", "categorie": "Bovenkleding", "type": "T-shirt", "merk": "Nike", "kleur": "Wit", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "2", "categorie": "Bovenkleding", "type": "Trui", "merk": "Nike", "kleur": "Wit", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "3", "categorie": "Bovenkleding", "type": "Blazer", "merk": "Nike", "kleur": "Wit", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "4", "categorie": "Onderkleding", "type": "Broek", "merk": "Tommy Hilfiger", "kleur": "Blauw", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "5", "categorie": "Onderkleding", "type": "Panty", "merk": "Nike", "kleur": "Wit", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "6", "categorie": "Bovenkleding", "type": "Jas", "merk": "Nike", "kleur": "Rood", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "7", "categorie": "Hoofddeksel", "type": "Pet", "merk": "Ralph Lauren", "kleur": "Beige", "kenmerk": "Beige pet"},
+        {"id": "8", "categorie": "Hoofddeksel", "type": "Muts", "merk": "Zara", "kleur": "Wit", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "9", "categorie": "Hoofddeksel", "type": "Hoed", "merk": "Zara", "kleur": "Bruin", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "10", "categorie": "Schoenen", "type": "Laarzen", "merk": "Zara", "kleur": "Zwart", "kenmerk": "Zwarte lange laarzen tot net onder je knie"},
+        {"id": "11", "categorie": "Schoenen", "type": "Gympen", "merk": "Nike", "kleur": "Wit", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "12", "categorie": "Accessoires", "type": "Oorbellen", "merk": "Zara", "kleur": "Bruin", "kenmerk": "Wit met blauwe accenten"},
+        {"id": "12", "categorie": "Accessoires", "type": "Sjaal", "merk": "Zara", "kleur": "Bruin", "kenmerk": "Wit met blauwe accenten"}
+    ],
+    "soortenKleuren": [
+        {"naam": "Blauw"},
+        {"naam": "Rood"},
+        {"naam": "Groen"},
+        {"naam": "Geel"},
+        {"naam": "Oranje"},
+        {"naam": "Paars"},
+        {"naam": "Roze"},
+        {"naam": "Zwart"},
+        {"naam": "Wit"},
+        {"naam": "Grijs"},
+        {"naam": "Beige"},
+        {"naam": "Turkoois"},
+        {"naam": "Bruin"}
+    ]
+}
