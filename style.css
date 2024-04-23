@@ -154,3 +154,27 @@ ul {
     border: 1px solid black;
     padding: 10px;
 }
+
+body:has(#hoofddekselFilter:checked) .Bovenkleding, body:has(#hoofddekselFilter:checked) .Onderkleding, body:has(#hoofddekselFilter:checked) .Schoenen, body:has(#hoofddekselFilter:checked) .Accessoires{
+    display: none;
+}
+
+body:has(#bovenkledingFilter:checked) .Hoofddeksel, body:has(#bovenkledingFilter:checked) .Onderkleding, body:has(#bovenkledingFilter:checked) .Schoenen, body:has(#bovenkledingFilter:checked) .Accessoires{
+    display: none;
+}
+
+body:has(#onderkledingFilter:checked) .Hoofddeksel, body:has(#onderkledingFilter:checked) .Bovenkleding, body:has(#onderkledingFilter:checked) .Schoenen, body:has(#onderkledingFilter:checked) .Accessoires{
+    display: none;
+}
+
+body:has(#schoenenFilter:checked) .Hoofddeksel, body:has(#schoenenFilter:checked) .Bovenkleding, body:has(#schoenenFilter:checked) .Onderkleding, body:has(#schoenenFilter:checked) .Accessoires{
+    display: none;
+}
+
+body:has(#accessoiresFilter:checked) .Hoofddeksel, body:has(#accessoiresFilter:checked) .Bovenkleding, body:has(#accessoiresFilter:checked) .Onderkleding, body:has(#accessoiresFilter:checked) .Schoenen{
+    display: none;
+}
+
+#resultaatOverzicht:has(ul:empty), #resultaatOverzicht:has(ul:empty) ~ #saveOutfit {
+    display: none;
+}

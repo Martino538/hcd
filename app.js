@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const newCategory = [
                     ...new Set(data.kleding.map((item) => item.categorie)),
                 ];
+
                 newCategory.forEach((category) => {
                     const option = document.createElement("option");
                     option.text = category;
@@ -42,16 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     newClothesColor.add(option);
                 });
 
-                const newClothesBrand =
-                    document.getElementById("newClothesBrand");
-                const brands = [
-                    ...new Set(data.kleding.map((item) => item.merk)),
-                ];
-                brands.forEach((brand) => {
-                    const option = document.createElement("option");
-                    option.text = brand;
-                    newClothesBrand.add(option);
-                });
             } else if (document.URL.includes("overzicht.html")) {
                 var container = document.querySelector(".link-container");
 
@@ -62,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         // Maak een nieuwe div aan voor de kaart
                         var card = document.createElement("div");
                         card.classList.add("card");
+                        card.classList.add(item.categorie);
 
                         // Vul de kaart met de gegevens van het object
                         card.innerHTML = `
@@ -152,14 +144,17 @@ document.addEventListener("DOMContentLoaded", function () {
                                     clothingType,
                                     JSON.stringify(clothing),
                                 );
-                                window.location.href = "kledingkiezen.html";
-                                // console.log(clothingType, clothing);
+                                var soundEffect = new Audio('plop.mp3');
+                                soundEffect.play();
+
+                                setTimeout(() => {
+                                    window.location.href = "kledingkiezen.html";
+                                }, 200);
                             });
                         });
                     }
                 });
             } else if (document.URL.includes("kledingkiezen.html")) {
-                // Toon de naam van de div in het resultaatoverzicht
                 let results = '';
                 const resultaatOverzicht = document.getElementById("resultaatOverzicht");
                 const overviewResults = document.createElement("div");
@@ -169,11 +164,39 @@ document.addEventListener("DOMContentLoaded", function () {
                     const localStorageValues = localStorage.getItem(clothingType);
                     const lsParsed = JSON.parse(localStorageValues);
                     if (lsParsed) {
-                        results+= `<li>${clothingType}: ${lsParsed.type}, kleur: ${lsParsed.kleur}, kenmerken: ${lsParsed.kenmerk}</li>`;
+                        const buttonId = `${clothingType}-btn`; // Button ID opslaan in een constante
+                        console.log(buttonId); // Log de constante buttonId
+                        results += `<li>${clothingType}: ${lsParsed.type}, kleur: ${lsParsed.kleur}, kenmerken: ${lsParsed.kenmerk} <button id="${buttonId}" class="delete-btn" data-clothing="${clothingType}">Verwijder item</button></li>`;
                     }
                 });
+                
+                // Event listener toevoegen aan het document en reageren op klikken op knoppen met de class 'delete-btn'
+                const hoofddekselsLS = localStorage.getItem("Hoofddeksel");
+                const bovenkledingLS = localStorage.getItem("Bovenkleding");
+                const onderkledingLS = localStorage.getItem("Onderkleding");
+                const schoenenLS = localStorage.getItem("Schoenen");
+                const accessoiresLS = localStorage.getItem("Accessoires");
 
-                // console.log(results);
+                if(hoofddekselsLS || bovenkledingLS || onderkledingLS || schoenenLS || accessoiresLS != null) {
+                    document.addEventListener('click', (event) => {
+                        if (event.target.classList.contains('delete-btn')) {
+                            const clothingTypeToDelete = event.target.getAttribute('data-clothing');
+                            console.log(clothingTypeToDelete);
+                            localStorage.removeItem(clothingTypeToDelete);
+                            event.target.parentNode.remove();
+    
+                            const container = document.getElementById('resultaatOverzicht');
+                            const saveOutfitBtn = document.getElementById('saveOutfit');
+                            // container.remove();
+                            // saveOutfitBtn.remove();
+                            var soundEffect = new Audio('correct.mp3');
+                            soundEffect.play();
+                        }
+                    });
+                }
+
+
+
                     
                 if(results != '') {
                     resultaatOverzicht.innerHTML = `<p>Overzicht geselecteerde kleding:</p><ul>${results}</ul>`;
@@ -189,10 +212,14 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     })
 
-                    if (isEmpty.length) {
-                        alert('some values are not filled');   
+                    if (isEmpty.length > 5) {
+                        var soundEffect = new Audio('error.mp3');
+                        soundEffect.play();
+                        alert('Selecteer minimaal 1 kledingstuk');   
                     } else {
-                        alert('Outfit is opgeslagen');
+                        var soundEffect = new Audio('correct.mp3');
+                        soundEffect.play();
+                        alert('Outfit is succesvol opgeslagen');
                         let localStorageValues;
                         const allChoices = clothingTypes.map(clothingType => {
                             localStorageValues = localStorage.getItem(clothingType);
@@ -209,20 +236,42 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (document.URL.includes("opgeslagen.html")) {
                 const container = document.getElementById('saved-container');
                 const localStorageValues = localStorage.getItem("SavedOutfit");
-                const outfitList = document.createElement('ul');
-                outfitList.classList.add('savedOutfitItem');
-                
-                const lsParsed = JSON.parse(localStorageValues);
-                lsParsed.forEach(element => {
-                    const objectData = JSON.parse(element);
-                    const listItem = document.createElement('li');
-                    listItem.textContent = `${objectData.categorie}: ${objectData.type}, kleur: ${objectData.kleur}, kenmerken: ${objectData.kenmerk}`;
-                    outfitList.appendChild(listItem);
-                });
-                
-                container.appendChild(outfitList);
 
-                
+                if(localStorageValues) {
+                    const outfitCounter = 1;
+                    const outfitTitle = document.createElement('p');
+                    outfitTitle.textContent = `Outfit ${outfitCounter}`;
+                    container.appendChild(outfitTitle);
+                    
+                    const outfitList = document.createElement('ul');
+                    outfitList.classList.add('savedOutfitItem');
+
+                    const delBtn = document.createElement('button');
+                    delBtn.textContent = 'Verwijder outfit';
+
+                    delBtn.addEventListener('click', function() {
+                        localStorage.removeItem('SavedOutfit');
+                        location.reload();
+                    });
+                    
+                    const lsParsed = JSON.parse(localStorageValues);
+                    lsParsed.forEach(element => {
+                        // Controleer of het element null is
+                        if (element !== null) {
+                            const objectData = JSON.parse(element);
+                            const listItem = document.createElement('li');
+                            listItem.textContent = `${objectData.categorie}: ${objectData.type}, kleur: ${objectData.kleur}, kenmerken: ${objectData.kenmerk}`;
+                            outfitList.appendChild(listItem);
+                        }
+                    });
+                    
+                    container.appendChild(outfitList);
+                    container.appendChild(delBtn);
+                } else {
+                    container.textContent = 'Er zijn nog geen opgeslagen outfits';
+                }
+
+
             } else if (document.URL.includes("willekeurige-outfit.html")) {
                 const container = document.getElementById('outfit-container');
                 const genOutfitBtn = document.getElementById('genOutfitBtn');
@@ -303,6 +352,8 @@ function saveNewClothes() {
     localStorage.setItem("Nieuw_kledingstuk" + counterId, kledingstukJSON);
 
     // Eventueel feedback geven aan de gebruiker
-    alert("Kledingstuk succesvol toegevoegd aan lokale opslag!");
+    alert("Kledingstuk succesvol opgeslagen!");
+    var soundEffect = new Audio('correct.mp3');
+    soundEffect.play();
     counterId++;
 }
