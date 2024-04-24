@@ -1,3 +1,7 @@
+![title](https://github.com/Martino538/hcd/assets/32341318/5ba899ca-0671-464d-b9af-91d9288eea40)
+
+
+
 # Proces verslag
 ### Introductie project (03-03-2024)
 Vandaag was de introductie van de opdracht. We zijn als groepje bij elkaar gekomen om een aantal vragen op te stellen voor het interview. Deze vragen staan hieronder vermeld:
