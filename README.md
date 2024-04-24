@@ -94,12 +94,9 @@ Als laatste heb ik nog wat nonsense aan de applicatie toegevoegd. Als er een bep
 ### Testen ronde 3 (24-04-2024)
 Vandaag heb ik mijn applicatie laten testen door Petra. Vooraf had ik zelf eerst goed geoefend met de screenreader en leek het erop dat alles gebruiksvriendelijk is. Hieronder staan mijn waarnemingen:
 
-
-
+Petra is door mijn applicatie gelopen en ze vond het erg goed! Vrijwel alle functionaliteiten waren vanzelfsprekend en ik hoefde niks toe te lichten. Ze vond het erg fijn dat er overal een 'terug' knop zat die makkelijk te bereiken was. De willekeurig gegenereerde outfit en het opslaan vond ze een hele leuk toevoeging. Petra had nog 2 suggesties. Ze vind dat als je 1 kledingstuk hebt je geen volledige outfits hebt. Je kan dus pas opslaan als alle kledingstukken zijn ingevuld. Ook zou ze het fijn vinden als een willekeurig gegenereerde outfit gebasseerd wordt op het weer.
 
 ### De toekomst van dit project
 Als ik een week langer de tijd had voor dit project had ik een paar dingen verder doorgevoerd. Momenteel wordt een nieuw kledingstuk wel opgeslagen in de localstorage, maar wordt dit kledingstuk nog niet uitgelezen naar de browser. Hierdoor is het nieuwe kledingstuk nog niet zichtbaar in het kledingoverzicht. Ook wil ik dat je meerdere outfits kunt opslaan. Momenteel kan je namelijk maar 1 outfit opslaan en wordt de 'oude' steeds overschreven.
-
-Daarnaast had Petra nog enkele belemmeringen.....
 
 
