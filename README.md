@@ -84,9 +84,10 @@ Vandaag ben ik gaan werken aan het implementeren van een 'randomiser' functie. E
 <img width="574" alt="Scherm­afbeelding 2024-04-24 om 10 54 59" src="https://github.com/Martino538/hcd/assets/32341318/77e2c95d-1f09-4ae6-bff8-c8fb8e963d0e">
 <img width="412" alt="Scherm­afbeelding 2024-04-24 om 10 55 17" src="https://github.com/Martino538/hcd/assets/32341318/8d5b3e33-88da-49b0-802e-7816dfc1b403">
 
+Daarnaast heb ik de gebruiker ook de mogelijkheid gegeven om een outfit samen te stellen, waarbij je een overzicht krijgt van alle geselecteerde kledingsstukken, een selectie kunt opslaan en kunt inzien wat je hebt opgeslagen. Dit waren lastige functionaliteiten waar ik veel tijd in heb gestopt. Ik heb hier wel veel van kunnen leren, want ik weet nu wel goed hoe de localstorage werkt. Natuurlijk moesten we tijdens het vak browser tech ook met localstorage werken, maar bij dit project is het iets geavanceerder, omdat ik nu objecten moet opslaan en uitlezen. Hieronder is het resultaat van de opgeslagen outfit zichtbaar:
 
+<img width="491" alt="Scherm­afbeelding 2024-04-24 om 11 32 48" src="https://github.com/Martino538/hcd/assets/32341318/9f301cff-c659-4462-ba5a-65082b2f9391">
 
-Daarnaast heb ik de gebruiker ook de mogelijkheid gegeven om een outfit samen te stellen, waarbij je een overzicht krijgt van alle geselecteerde kledingsstukken, een selectie kunt opslaan en kunt inzien wat je hebt opgeslagen. Dit waren lastige functionaliteiten waar ik veel tijd in heb gestopt. Ik heb hier wel veel van kunnen leren, want ik weet nu wel goed hoe de localstorage werkt. Natuurlijk moesten we tijdens het vak browser tech ook met localstorage werken, maar bij dit project is het iets geavanceerder, omdat ik nu objecten moet opslaan en uitlezen.
 
 Als laatste heb ik nog wat nonsense aan de applicatie toegevoegd. Als er een bepaalde actie zoals het opslaan van een outfit wordt outgevoerd, dan is er een geluidje te horen. Hierdoor kan Petra nog makkelijker herkennen wat voor actie ze aan het doen is.
 
