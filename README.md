@@ -53,9 +53,31 @@ Volgende week wil ik de laatste test ronde gebruiken om zoveel mogelijk vragen t
 Voor nu ga ik aan de slag met de volgende functionaliteiten, zodat ik deze tijdens de laatste test ronde kan laten testen:
 - Implementeren van een opslaan functie
 - Het bieden van een 'Randomiser'. Deze functie bied de mogelijkheid om een willekeurige outfit te genereren. Als Petra dan helemaal geen inspiratie heeft voor een outfit, kan dit haar wellicht helpen.
-- Ervoor zorgen dat zowel localstorage data wordt gemengt met de dataset en deze op het scherm tonen.
 
 Ook had Vasillis mij meegegeven dat ik altijd iets moet testen. Het maakt niet uit of het veel is, maar een klein dingetje kan al de moeite waard zijn om te testen. Mijn kledingoverzicht had ik wel aan haar kunnen laten zien en kijken of dit overzicht wel duidelijk voor haar werkt. Ik heb nu geleerd dat hoe klein de voortgang ook is, dat wat je maakt kan je laten testen. Dit ga ik in de toekomst zeker meenemen.
 
-### Voortgangsgesprek 3 (12-04-2024)
+### Voortgangsgesprek 3 (19-04-2024)
 Vandaag heb ik Vasillis mijn werk laten zien. Hij was erg tevreden met wat ik nu had staan en welke ideeën ik nog wil gaan doorvoeren. Vooral over de randomiser was hij erg te spreken, omdat dit vrij uniek is. Al met al kwam het er op neer dat ik lekker door moest werken en mijn applicatie moest gaan laten testen.
+
+### Werken aan de applicatie (23-04-2024)
+Vandaag ben ik gaan werken aan het implementeren van een 'randomiser' functie. Eerst dacht ik dat het onzettend ingewikkeld zou zijn, maar verassend genoeg was dit makkelijker te maken als gedacht. Het lijkt veel code om dit voor elkaar te krijgen, maar de code is makkelijk te begrijpen. Hieronder is de code en het eindresultaat zichtbaar:</br>
+
+
+Daarnaast heb ik de gebruiker ook de mogelijkheid gegeven om een outfit samen te stellen, waarbij je een overzicht krijgt van alle geselecteerde kledingsstukken, een selectie kunt opslaan en kunt inzien wat je hebt opgeslagen.
+
+Als laatste heb ik nog wat nonsense aan de applicatie toegevoegd. Als er een bepaalde actie zoals het opslaan van een outfit wordt outgevoerd, dan is er een geluidje te horen. Hierdoor kan Petra nog makkelijker herkennen wat voor actie ze aan het doen is.
+
+### Testen ronde 3 (24-04-2024)
+Vandaag heb ik mijn applicatie laten testen door Petra. Vooraf had ik zelf eerst goed geoefend met de screenreader en leek het erop dat alles gebruiksvriendelijk is. Hieronder staan mijn waarnemingen:
+
+
+
+
+
+
+### De toekomst van dit project
+Als ik een week langer de tijd had voor dit project had ik een paar dingen verder doorgevoerd. Momenteel wordt een nieuw kledingstuk wel opgeslagen in de localstorage, maar wordt dit kledingstuk nog niet uitgelezen naar de browser. Hierdoor is het nieuwe kledingstuk nog niet zichtbaar in het kledingoverzicht. Ook wil ik dat je meerdere outfits kunt opslaan. Momenteel kan je namelijk maar 1 outfit opslaan en wordt de 'oude' steeds overschreven.
+
+Daarnaast had Petra nog enkele belemmeringen.....
+
+
