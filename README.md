@@ -56,21 +56,42 @@ Voor nu ga ik aan de slag met de volgende functionaliteiten, zodat ik deze tijde
 
 Ook had Vasillis mij meegegeven dat ik altijd iets moet testen. Het maakt niet uit of het veel is, maar een klein dingetje kan al de moeite waard zijn om te testen. Mijn kledingoverzicht had ik wel aan haar kunnen laten zien en kijken of dit overzicht wel duidelijk voor haar werkt. Ik heb nu geleerd dat hoe klein de voortgang ook is, dat wat je maakt kan je laten testen. Dit ga ik in de toekomst zeker meenemen.
 
+### Werken aan de applicatie (18-04-2024)
+Vandaag heb ik vooral het ontwerp aangepast. Gister heb ik helaas mijn applicatie niet kunnen laten testen, maar op basis van mijn waarnemingen bij anderen en functionaliteiten die ik nog wil implementeren moet ik het ontwerp aanpassen. De structuur van mijn applicatie is nu als volgt:
+
+```
+|--- Hoofdmenu
+    |--- Overzicht kledingkast
+    |--- Kledingstuk toevoegen
+    |--- Stel outfit samen
+        |--- Hoofddeksel
+        |--- Bovenkleding
+        |--- Onderkleding
+        |--- Schoenen
+        |--- Accessoires
+    |--- Genereer willekeurige outfit
+    |--- Opgeslagen outfits
+```
+
+Op de opgeslagen en willekeurige outfits na, heb ik het ontwerp uitgewerkt. De applicatie ziet er als volgt uit:
+<img width="838" alt="Scherm­afbeelding 2024-04-24 om 10 53 18" src="https://github.com/Martino538/hcd/assets/32341318/be9f940e-753a-478a-a78f-256443c9cc69">
+
 ### Voortgangsgesprek 3 (19-04-2024)
 Vandaag heb ik Vasillis mijn werk laten zien. Hij was erg tevreden met wat ik nu had staan en welke ideeën ik nog wil gaan doorvoeren. Vooral over de randomiser was hij erg te spreken, omdat dit vrij uniek is. Al met al kwam het er op neer dat ik lekker door moest werken en mijn applicatie moest gaan laten testen.
 
 ### Werken aan de applicatie (23-04-2024)
 Vandaag ben ik gaan werken aan het implementeren van een 'randomiser' functie. Eerst dacht ik dat het onzettend ingewikkeld zou zijn, maar verassend genoeg was dit makkelijker te maken als gedacht. Het lijkt veel code om dit voor elkaar te krijgen, maar de code is makkelijk te begrijpen. Hieronder is de code en het eindresultaat zichtbaar:</br>
+<img width="574" alt="Scherm­afbeelding 2024-04-24 om 10 54 59" src="https://github.com/Martino538/hcd/assets/32341318/77e2c95d-1f09-4ae6-bff8-c8fb8e963d0e">
+<img width="412" alt="Scherm­afbeelding 2024-04-24 om 10 55 17" src="https://github.com/Martino538/hcd/assets/32341318/8d5b3e33-88da-49b0-802e-7816dfc1b403">
 
 
-Daarnaast heb ik de gebruiker ook de mogelijkheid gegeven om een outfit samen te stellen, waarbij je een overzicht krijgt van alle geselecteerde kledingsstukken, een selectie kunt opslaan en kunt inzien wat je hebt opgeslagen.
+
+Daarnaast heb ik de gebruiker ook de mogelijkheid gegeven om een outfit samen te stellen, waarbij je een overzicht krijgt van alle geselecteerde kledingsstukken, een selectie kunt opslaan en kunt inzien wat je hebt opgeslagen. Dit waren lastige functionaliteiten waar ik veel tijd in heb gestopt. Ik heb hier wel veel van kunnen leren, want ik weet nu wel goed hoe de localstorage werkt. Natuurlijk moesten we tijdens het vak browser tech ook met localstorage werken, maar bij dit project is het iets geavanceerder, omdat ik nu objecten moet opslaan en uitlezen.
 
 Als laatste heb ik nog wat nonsense aan de applicatie toegevoegd. Als er een bepaalde actie zoals het opslaan van een outfit wordt outgevoerd, dan is er een geluidje te horen. Hierdoor kan Petra nog makkelijker herkennen wat voor actie ze aan het doen is.
 
 ### Testen ronde 3 (24-04-2024)
 Vandaag heb ik mijn applicatie laten testen door Petra. Vooraf had ik zelf eerst goed geoefend met de screenreader en leek het erop dat alles gebruiksvriendelijk is. Hieronder staan mijn waarnemingen:
-
-
 
 
 
