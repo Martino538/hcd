@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Functie om kaarten te genereren voor de gegeven kledingstukken
                 function generateCards(data) {
                     // Loop door elk object in de array
+
                     data.forEach((item) => {
                         // Maak een nieuwe div aan voor de kaart
                         var card = document.createElement("div");
@@ -70,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Controleer of er objecten in de localStorage zijn opgeslagen
                 if (localStorage.getItem("nieuw_kledingstuk")) {
+
                     // Haal de opgeslagen objecten op en converteer ze naar JSON
                     var localStorageData = JSON.parse(
                         localStorage.getItem("nieuw_kledingstuk")
@@ -84,47 +86,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Genereer kaarten alleen voor de gegevens uit JSON
                     generateCards(data.kleding);
                 }
-            } else if (document.URL.includes("resultaten.html")) {
-                const urlParams = new URLSearchParams(window.location.search);
-                const chosenColor = urlParams.get("noPrefColor");
-                const chosenType = urlParams.get("noPrefType");
-
-                // Haal de opgeslagen objecten uit de localStorage
-                const storageItems = localStorage.getItem("Nieuw_kledingstuk");
-                const objects = JSON.parse(storageItems);
-
-                console.log(data.kleding);
-
-                // Voeg de objecten uit de localStorage samen met de objecten uit de data array
-                const gecombineerdeObjecten = data.kleding.concat(objects);
-
-                const resultaten = data.kleding.filter(
-                    (item) =>
-                        item.kleur !== chosenColor && item.type !== chosenType
-                );
-
-                const resultatenContainer = document.getElementById("results-container");
-                resultaten.forEach((item) => {
-                    const card = document.createElement("div");
-                    card.classList.add("card");
-
-                    card.innerHTML = `
-                        <h3>${item.type}</h3>
-                        <p><strong>Merk:</strong> ${item.merk}</p>
-                        <p><strong>Kleur:</strong> ${item.kleur}</p>
-                        <p><strong>Kenmerk:</strong> ${item.kenmerk}</p>
-                    `;
-                    resultatenContainer.appendChild(card);
-                });
             } else if (document.URL.includes("samenstellen.html")) {
                 clothingTypes.forEach((clothingType) => {
                     const resultatenContainer = document.getElementById("compile-container");
-                    const clothingObjects = data.kleding.filter((object) => object.categorie === clothingType);
 
-                    console.log(clothingObjects);
+                    // Haal de opgeslagen objecten op en converteer ze naar JSON
+                    const localStorageData = JSON.parse(localStorage.getItem("nieuw_kledingstuk"));
+                    const filteredData = data.kleding.filter((object) => object.categorie === clothingType);
+                    const combinedData = filteredData.concat(localStorageData);
+                    console.log(combinedData);
 
                     if (document.URL.includes(`samenstellen.html?${clothingType.toLowerCase()}`)) {
-                        clothingObjects.forEach((clothing) => {
+                        combinedData.forEach((clothing) => {
                             const card = document.createElement("div");
                             card.classList.add("card");
 
@@ -165,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     const lsParsed = JSON.parse(localStorageValues);
                     if (lsParsed) {
                         const buttonId = `${clothingType}-btn`; // Button ID opslaan in een constante
-                        console.log(buttonId); // Log de constante buttonId
                         results += `<li>${clothingType}: ${lsParsed.type}, kleur: ${lsParsed.kleur}, kenmerken: ${lsParsed.kenmerk} <button id="${buttonId}" class="delete-btn" data-clothing="${clothingType}">Verwijder item</button></li>`;
                     }
                 });
@@ -181,22 +153,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.addEventListener('click', (event) => {
                         if (event.target.classList.contains('delete-btn')) {
                             const clothingTypeToDelete = event.target.getAttribute('data-clothing');
-                            console.log(clothingTypeToDelete);
                             localStorage.removeItem(clothingTypeToDelete);
                             event.target.parentNode.remove();
-    
-                            const container = document.getElementById('resultaatOverzicht');
-                            const saveOutfitBtn = document.getElementById('saveOutfit');
-                            // container.remove();
-                            // saveOutfitBtn.remove();
+
                             var soundEffect = new Audio('correct.mp3');
                             soundEffect.play();
                         }
                     });
                 }
-
-
-
                     
                 if(results != '') {
                     resultaatOverzicht.innerHTML = `<p>Overzicht geselecteerde kleding:</p><ul>${results}</ul>`;
@@ -212,10 +176,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     })
 
-                    if (isEmpty.length > 5) {
+                    if (isEmpty.length > 0) {
                         var soundEffect = new Audio('error.mp3');
                         soundEffect.play();
-                        alert('Selecteer minimaal 1 kledingstuk');   
+                        alert('Selecteer voor elk type een kledingstuk');   
                     } else {
                         var soundEffect = new Audio('correct.mp3');
                         soundEffect.play();
@@ -349,7 +313,7 @@ function saveNewClothes() {
     const kledingstukJSON = JSON.stringify(kledingstuk);
 
     // Sla gegevens op in de lokale opslag
-    localStorage.setItem("Nieuw_kledingstuk" + counterId, kledingstukJSON);
+    localStorage.setItem("nieuw_kledingstuk", kledingstukJSON);
 
     // Eventueel feedback geven aan de gebruiker
     alert("Kledingstuk succesvol opgeslagen!");
