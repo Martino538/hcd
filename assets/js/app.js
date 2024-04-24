@@ -94,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     const localStorageData = JSON.parse(localStorage.getItem("nieuw_kledingstuk"));
                     const filteredData = data.kleding.filter((object) => object.categorie === clothingType);
                     const combinedData = filteredData.concat(localStorageData);
-                    console.log(combinedData);
 
                     if (document.URL.includes(`samenstellen.html?${clothingType.toLowerCase()}`)) {
                         combinedData.forEach((clothing) => {
