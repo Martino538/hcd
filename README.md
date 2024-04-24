@@ -93,14 +93,14 @@ Daarnaast heb ik de gebruiker ook de mogelijkheid gegeven om een outfit samen te
 <img width="491" alt="Scherm­afbeelding 2024-04-24 om 11 32 48" src="https://github.com/Martino538/hcd/assets/32341318/9f301cff-c659-4462-ba5a-65082b2f9391">
 
 
-Als laatste heb ik nog wat nonsense aan de applicatie toegevoegd. Als er een bepaalde actie zoals het opslaan van een outfit wordt outgevoerd, dan is er een geluidje te horen. Hierdoor kan Petra nog makkelijker herkennen wat voor actie ze aan het doen is.
+Als laatste heb ik nog wat nonsense aan de applicatie toegevoegd. Als er een bepaalde actie zoals het opslaan van een outfit wordt uitgevoerd, dan is er een geluidje te horen. Hierdoor kan Petra nog makkelijker herkennen wat voor actie ze aan het doen is.
 
 ### Testen ronde 3 (24-04-2024)
 Vandaag heb ik mijn applicatie laten testen door Petra. Vooraf had ik zelf eerst goed geoefend met de screenreader en leek het erop dat alles gebruiksvriendelijk is. Hieronder staan mijn waarnemingen:
 
-Petra is door mijn applicatie gelopen en ze vond het erg goed! Vrijwel alle functionaliteiten waren vanzelfsprekend en ik hoefde niks toe te lichten. Ze vond het erg fijn dat er overal een 'terug' knop zat die makkelijk te bereiken was. De willekeurig gegenereerde outfit en het opslaan vond ze een hele leuk toevoeging. Petra had nog 2 suggesties. Ze vind dat als je 1 kledingstuk hebt je geen volledige outfits hebt. Je kan dus pas opslaan als alle kledingstukken zijn ingevuld. Ook zou ze het fijn vinden als een willekeurig gegenereerde outfit gebasseerd wordt op het weer.
+Petra is door mijn applicatie gelopen en ze vond het erg goed! Vrijwel alle functionaliteiten waren vanzelfsprekend en ik hoefde niks toe te lichten. De navigatiestructuur vond ze prettig werken en ze vond het erg fijn dat er overal een 'terug' knop zat die makkelijk te bereiken was. De willekeurig gegenereerde outfit en het opslaan vond ze een hele leuk toevoeging en de geluiden vond ze erg prettig. Petra had nog 2 suggesties. Ze vind dat als je 1 kledingstuk hebt je geen volledige outfits hebt. Je kan dus pas opslaan als alle kledingstukken zijn ingevuld. Ook zou ze het fijn vinden als een willekeurig gegenereerde outfit gebasseerd wordt op het weer. Ik heb meteen in mijn applicatie doorgevoerd dat je eerst alle kledingstukken moet invullen voordat je een outfit kunt opslaan.
 
 ### De toekomst van dit project
-Als ik een week langer de tijd had voor dit project had ik een paar dingen verder doorgevoerd. Momenteel wordt een nieuw kledingstuk wel opgeslagen in de localstorage, maar wordt dit kledingstuk nog niet uitgelezen naar de browser. Hierdoor is het nieuwe kledingstuk nog niet zichtbaar in het kledingoverzicht. Ook wil ik dat je meerdere outfits kunt opslaan. Momenteel kan je namelijk maar 1 outfit opslaan en wordt de 'oude' steeds overschreven.
-
+Als ik een week langer de tijd had voor dit project had ik een paar dingen verder doorgevoerd. Momenteel wordt een nieuw kledingstuk wel opgeslagen in de localstorage, maar wordt dit kledingstuk nog niet uitgelezen naar de browser. Hierdoor is het nieuwe kledingstuk nog niet zichtbaar in het kledingoverzicht. Ook wil ik dat je meerdere outfits kunt opslaan. Momenteel kan je namelijk maar 1 outfit opslaan en wordt de 'oude' steeds overschreven. Ook had ik de feedback van Petra meegenomen om outfits te genereren op basis van het weer.
+ 
 
