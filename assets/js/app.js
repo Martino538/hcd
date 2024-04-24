@@ -8,7 +8,7 @@ let clothingTypes = [
 ];
 document.addEventListener("DOMContentLoaded", function () {
     // Fetch de JSON-bestanden
-    fetch("data.json")
+    fetch("./assets/data/data.json")
         .then((response) => response.json())
         .then((data) => {
             if (document.URL.includes("nieuw-kledingstuk.html")) {
