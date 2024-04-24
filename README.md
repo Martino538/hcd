@@ -26,7 +26,7 @@ Vandaag was de introductie van de opdracht. We zijn als groepje bij elkaar gekom
 
 Hierna hebben we het interview met Petra gehad. In het begin was het een beetje grip vinden in het stellen van de vragen. Vooraf was ik een klein beetje zenuwachtig, omdat Petra toch een handicap heeft. Echter verliep het gesprek vrij soepel en waren de zenuwen niet nodig. Als ze in een groep aanwezig is voelt het net alsof ze geen handicap heeft. Na het interview hebben we als groep alle aantekeningen gedeeld in het document met de vragen.
 
-Wat ik vandaag geleerd heb is hoe blinde mensen daadwerkelijk gebruik maken van een website. Ook realiseer ik me nu hoe belangrijk naamgeving en een omschrijving van elementen kan zijn. Iets is al snel onduidelijk.
+Wat ik vandaag geleerd heb is hoe blinde mensen daadwerkelijk gebruik maken van een website. Ik wist voorheen niet hoe een screenreader te werk ging, maar het blijkt nog best wel veel swipe werk te zijn. Ook realiseer ik me nu hoe belangrijk naamgeving en een omschrijving van elementen kan zijn. Iets is al snel onduidelijk. 
 
 ### Voortgangsgesprek 1 (04-04-2024 & 05-04-2024)
 Beide dagen was ik erg ziek en kon ik niet aan de opdracht werken of feedback krijgen.
@@ -64,7 +64,7 @@ Vandaag kwam Petra langs om mijn applicatie te testen. Helaas liep dit niet hele
 
 Om deze reden heb ik petra voorgelegd wat mijn idee was en heb ik haar niet het prototype laten testen. Mijn idee was om een overzicht te genereren, een outfit kunnen samenstellen met alle kledingstukken en de mogelijkheid om deze eventueel op te kunnen slaan. Petra was wel erg enthousiast hierover.
 
-Omdat ik zelf geen test heb uitgevoerd op mijn prototype heb ik wel opgelet wat de anderen als feedback kregen. Zo wilde ze graag zo min mogelijk op mening gebasseerde functionaliteiten in de applicatie. Het aanbieden van een casual of zakelijke outfit heb ik dus bewust weggelaten, omdat ik dan op voorhand heb bepaald welke kleding onder deze categoriën vallen. Hiernaast is het ook belangrijk dat alle onnodige elementen worden weggelaten, zodat er weinig tot geen verwarring kan ontstaan.
+Omdat ik zelf geen test heb uitgevoerd op mijn prototype heb ik wel opgelet wat de anderen als feedback kregen. Zo wilde ze graag zo min mogelijk op mening gebasseerde functionaliteiten in de applicatie. Het aanbieden van een casual of zakelijke outfit heb ik dus bewust weggelaten, omdat ik dan op voorhand heb bepaald welke kleding onder deze categoriën vallen. Hiernaast is het ook belangrijk dat alle onnodige elementen worden weggelaten, zodat er weinig tot geen verwarring kan ontstaan. Ik wil het dus zo minimalistisch mogelijk maken, maar wel volledig functioneerd. Ook moeten knoppen makkelijk bereikbaar zijn, zodat ze snel kan navigeren binnen de pagina's. 
 
 Door deze waarnemingen weet ik nu wel wat Petra belangrijk vond en kan ik deze belemmeringen in mijn eigen applicatie voorkomen.
 
