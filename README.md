@@ -1,8 +1,24 @@
 ![title](https://github.com/Martino538/hcd/assets/32341318/5ba899ca-0671-464d-b9af-91d9288eea40)
 
-
-
 # Proces verslag
+
+### Het Idee
+Dit project is specifiek gericht op één persoon, maar zou potentieel bruikbaar kunnen zijn voor meedere personen. In dit geval maak ik een applicatie voor iemand die blind is. Hij/Zij wilde graag inzien welke kleding hij/zij in hem/haar kast heeft liggen. Hiernaast zou het fijn zijn om hulp te krijgen bij het kiezen van een outfit. Deze applicatie bied hulp voor beide problemen. Benieuwd hoe mijn resultaat tot stand is gekomen? Hieronder vermeld ik het proces!
+
+Tijdens dit project zal ik ook rekening houden met de design principles: 
+
+**Study situation**
+Ik heb gerichte vragen gesteld en mij helemaal verdiept in de wensen van mijn doelgroep (in dit geval 1 persoon). Na het vaststellen van de behoeftes heb ik meerdere iteratieslagen gemaakt, waarbij ik deze getest heb met de doelgroep. Omdat mijn doelgroep blind is maken ze gebruik van een screenreader. Bij het gebruik van een screenreader moet je veel swipen. Ik heb geprobeerd te voorkomen dat mijn doelgroep bijzonder veel moet swipen om tot een resultaat te komen.
+
+**Ignore conventions**
+Tijdens het bedenken van een ontwerp heb ik geen rekening gehouden met standaard conventies of design principes. Ik had mijzelf voorgesteld om een zo minimalistisch mogelijk ontwerp te maken, waarbij echt alleen de must have functionaliteiten in te zien zijn. Hiernaast wilde ik ook een balans vinden tussen het aantal acties die je kan verrichten op een pagina, zonder te diep in de applicatie te moeten navigeren om te vinden wat je zoekt. Zo heb ik ook bepaalde tekst bovenin de pagina gepositioneerd, zodat dit als eerste werd voorgelezen i.p.v. een knop. Ik heb dus vooral praktisch gedacht waarvan ik d.m.v. testen heb vastgesteld dat de huidige opzet werkt.
+
+**Prioritise identity**
+Doordat ik de situatie van mijn doelgroep goed heb besturdeerd heb ik ook een goede identiteit weten te vormen naar mijn doelgroep. Het is zogezegd 'Met de hand gemaakt' en speciaal gericht op mijn doelgroep, op basis van wat ik gezien en gehoord heb van de doelgroep. Een voorbeeld hiervan is dat mijn doelgroep geen voorbedachte functies op basis van meningen/aannames wilt. Hierdoor is er veel vrijheid in het samenstellen van een outfit. Ook wilde ze graag zelf een omschrijving bij kledingstukken kunnen invoeren. 
+
+**Add nonsense**
+Ik heb geprobeerd wat extra's toe te voegen die tegelijkertijd van waarde zijn voor de applicatie. De applicatie bevat meerdere geluiden na het uitvoeren van een bepaalde actie. Denk hierbij aan het opslaan van een nieuw kledingstuk, opslaan/verwijderen van een (opgeslagen) outfit.
+
 ### Introductie project (03-03-2024)
 Vandaag was de introductie van de opdracht. We zijn als groepje bij elkaar gekomen om een aantal vragen op te stellen voor het interview. Deze vragen staan hieronder vermeld:
 
@@ -102,3 +118,6 @@ Petra is door mijn applicatie gelopen en ze vond het erg goed! Vrijwel alle func
 
 ### De toekomst van dit project
 Als ik een week langer de tijd had voor dit project had ik graag doorgevoerd dat je meerdere outfits kunt opslaan. Momenteel kan je namelijk maar 1 outfit opslaan en wordt de 'oude' steeds overschreven. Ook had ik de feedback van Petra meegenomen om outfits te genereren op basis van het weer.
+
+### Korte reflectie
+Aan het begin van deze opdracht was ik totaal niet gemotiveerd. Mijn interesse aan deze kant van development was ver te zoeken en ik had geen inspiratie bij het maken van een ontwerp of het uitdenken van een potentieel scenario. Gaande weg kwam ik steeds beter in een flow en zag ik licht aan de horizon. Het was veel werk, maar vooral erg leerzaam. Het doet mij goed om iemand hulp te kunnen bieden waar hij/zij problemen mee heeft. Al met al een geslaagd en leerzaam project!
